@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import HomeView from "./Views/HomeView";
+import Menu from "./Router/MainRouter";
 
-function App() {
+const App = () => {
+
   return (
-   <HomeView/>
+      <div>
+          <Menu />
+      </div>
+
   );
-}
+};
 
 export default App;
