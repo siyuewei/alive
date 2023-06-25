@@ -5,6 +5,7 @@ import { Card, Grid, Typography } from '@mui/material';
 // project imports
 import LineChart from '../Charts/LineChart';
 import ChartType from '../../util/Constant'
+import HeatMap from "../Charts/HeatMap";
 
 // ===========================|| DASHBOARD DEFAULT - BAJAJ AREA CHART CARD ||=========================== //
 /*
@@ -41,10 +42,11 @@ const SmallChartCard = ({data,categries,title,subtitle,chartType}) => {
                     </Typography>
                 </Grid>
             </Grid>
-            {chartType === ChartType.HEAT && <LineChart data={data} categries={categries}/>}
+            <div style={{ display: "flex",justifyContent:"center", alignItems: "center" }}>
+            {chartType === ChartType.HEAT && <HeatMap data={data} categries={categries}/>}
             {chartType === ChartType.LINE && <LineChart data={data} categries={categries}/>}
             {chartType === undefined && <LineChart data={data} categries={categries}/>}
-
+            </div>
         </Card>
     );
 };
