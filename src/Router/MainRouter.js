@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './menu.scss';
 import HomeView from '../Views/HomeView';
+import CalorieDetailView from "../Views/CalorieDetailView";
 
 const Menu = () => {
     const [navOpen, setNavOpen] = useState(false);
@@ -31,7 +32,7 @@ const Menu = () => {
                 <div className="content">
                     <Routes>
                         <Route path="/" element={<HomeView />} />
-                        <Route path="/data" element={<HomeView />} />
+                        <Route path="/data" element={<CalorieDetailView />} />
                         <Route path="/goal" element={<HomeView />} />
                     </Routes>
                 </div>

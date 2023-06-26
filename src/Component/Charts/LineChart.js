@@ -14,7 +14,7 @@ const LineChart = ({data,categries}) => {
     useEffect(() => {
         const options = {
             chart: {
-                type: 'line',
+                type: 'area',
                 height:135,
                 sparkline: {
                     enabled: true // false:显示详细的坐标数据，true:只显示一条折线

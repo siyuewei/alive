@@ -27,3 +27,7 @@ apex图表：[options选项思维导图整理 - 简书 (jianshu.com)](https://ww
 * util/Constant.js
 * Component/ChartCard/SmallChartCard.js
 * Component/Charts/LineChart.js
+
+
+
+Costumize Card需要传入options
